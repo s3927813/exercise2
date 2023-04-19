@@ -1,0 +1,200 @@
+/* z-index order */
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+/* I changed the color palette of the entire page to a brighter color scheme because I want this website to feel more modern and fun
+at first I thought I wanted to make it look mroe professional with serifs and darker muted colors, I ended up experimenting a lot and liking this color scheme
+better than when I only used greys and blacks with serif fonts  */
+:root{
+  --col-01:#272838;
+  --col-02:#F3DE8A;
+  --col-03:#EB9486;
+  --col-04:#7E7F9A;
+  --border: 1px solid var(--col-02);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-04);
+  color: var(--col-02);
+  padding: 2vw;
+}
+
+/*i've set up a basic flexbox for each recipe container - you might want to change some of the 
+  flex properties here on the container or on the individual flex items depending on how you want to style them*/
+
+
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+}
+
+/* I created a heading so I can edit the title of the page, I chose a sans serif font to make it more modern rather than looking
+like an old recipe book*/
+h1{
+  letter-spacing: 3px;
+    font-style: initial;
+    font-family:fantasy;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* I wanted to make the website more fun and colorful so I decided to change up the colors and use an open sans font*/
+.FilterSection{
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  color: var(--col-01)
+}
+
+.FilterBox{
+
+
+}
+
+/* For the filter button, I experimented with all the colors I have in the color palette to make the button clear to read but still cohesive with the whole page */
+
+.FilterButton{
+  background:#272838 ;
+  border: 1px var(--col-02);
+  color: var(--col-03);
+  padding: 0.75em 1.5em;
+  font-size: 25ox;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: var(--border);
+
+}
+
+.SelectedFilter{
+  
+}
+
+.RecipeLink{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: var(--col-02)
+
+}
+
+.RecipeName{
+  letter-spacing: 3px;
+  font-family:fantasy;
+  color:var(--col-02);
+  font-size: 30px;
+  text-align: center;
+}
+
+.Author{
+  letter-spacing: 3px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:var(--col-02);
+  font-size: 20px;
+  text-align: center;
+}
+
+.RecipeImageContainer{
+
+}
+
+.RecipeImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.Attribution{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:var(--col-01);
+  font-size: 18px;
+
+}
+
+/* I kept the texts below the title and author to be the same so the whole page can still look cohesive and work well together without looking messy I also kept the sans serif theme throughout the page*/
+.Publisher{
+
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:var(--col-01);
+  font-size: 18px;
+
+}
+
+.Cuisine{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:var(--col-01);
+  font-size: 18px;
+
+}
+
+.TimeToCook{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:var(--col-01);
+  font-size: 18px;
+
+}
+
+.SkillLevel{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:var(--col-01);
+  font-size: 18px;
+
+}
+
+.Course{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:var(--col-01);
+  font-size: 18px;
+}
+
+.Servings{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:var(--col-01);
+  font-size: 18px;
+}
+
+.Dietary{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:var(--col-01);
+  font-size: 18px;
+}
+
+.DatePublished{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:var(--col-01);
+  font-size: 18px;
+}
+
+.DateUpdated{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:var(--col-01);
+  font-size: 18px;
+}
+
+.SpecialEquipment{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:var(--col-01);
+  font-size: 18px;
+}
+
+/*visited link*/
+a:visited {
+  color: aqua;
+}
+
+/*settings to hover over link*/
+a:hover {
+  color: var(--col-02);
+}
+
+/* for while clicking link*/
+a:active {
+  color: aliceblue;
+}
