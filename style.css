@@ -40,7 +40,7 @@ like an old recipe book*/
 h1{
   letter-spacing: 3px;
     font-style: initial;
-    font-family:fantasy;
+    font-family: 'Kanit', sans-serif;
     font-size: 50px;
     text-align: center;
 }
@@ -86,7 +86,7 @@ h1{
 
 .RecipeName{
   letter-spacing: 3px;
-  font-family:fantasy;
+  font-family: 'Kanit', sans-serif;
   color:var(--col-02);
   font-size: 30px;
   text-align: center;
