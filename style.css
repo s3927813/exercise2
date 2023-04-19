@@ -39,10 +39,9 @@ body{
 like an old recipe book*/
 h1{
   letter-spacing: 3px;
-    font-style: initial;
-    font-family: 'Kanit', sans-serif;
-    font-size: 50px;
-    text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-size: 50px;
+  text-align: center;
 }
 
 /* I wanted to make the website more fun and colorful so I decided to change up the colors and use an open sans font*/
